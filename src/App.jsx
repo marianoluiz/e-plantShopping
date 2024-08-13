@@ -16,16 +16,19 @@ function App() {
     <div className="app-container">
       <div className={`landing-page ${showProductList ? 'fade-out' : ''}`}>
         <div className="background-image"></div>
+        
         <div className="content">
+          {/* left */}
          <div className="landing_content">
          <h1>Welcome To Paradise Nursery</h1>
           <div className="divider"></div>
-          <p>Where Green Meets Serenity</p>
+          <p style={{fontSize: '22px'}}>Where Green Meets Serenity</p>
          
           <button className="get-started-button" onClick={handleGetStartedClick}>
             Get Started
           </button>
          </div>
+         {/* right */}
           <div className="aboutus_container">
           <AboutUs/>
           </div>
