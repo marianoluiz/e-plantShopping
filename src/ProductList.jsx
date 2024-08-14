@@ -314,21 +314,29 @@ function ProductList() {
                     <h1><div>{category.category}</div></h1>
 
                     <div className='product-list'>
-                    {category.plants.map((plant, plantIndex) => (
+                    {category.plants.map((plant, plantIndex) => {
+
+                        const cartItem = cart.find(item => item.name === plant.name);
+                    
                     /* products list */
-                    <div className="product-card" key={plantIndex}>
+                    
+                    return (
+                        <div className="product-card" key={plantIndex}>
+                            <img className='product-image' src={plant.image} alt={plant.name} />
 
-                        <img className='product-image' src={plant.image} alt={plant.name} />
+                            <div className='product-title'>{plant.name}</div>
+                            <div className='product-price'>{plant.cost}</div>
+                            <div className='product-description'>{plant.description}</div>
 
-                        <div className='product-title'>{plant.name}</div>
-                        <div className='product-price'>{plant.cost}</div>
-                        <div className='product-description'>{plant.description}</div>
+                            <button 
+                            className={cartItem && cartItem.quantity > 0 ? 'product-button added-to-cart' : 'product-button'} 
+                            onClick={() => handleAddToCart(plant)}>
+                            {cartItem && cartItem.quantity > 0 ? 'Added to Cart' : 'Add to Cart'}
+                            </button>
+                        </div>
+                        );
                         
-                        {/*Similarly like the above plant.name show other details like description and cost*/}
-
-                        <button className={cart[index].quantity > 0} onClick={() => handleAddToCart(plant)}>Add to Cart</button>
-                    </div>
-                        ))}
+                    })}
                     </div>
                 </div>
             ))}
