@@ -9,6 +9,14 @@ function ProductList() {
 
     const cart = useSelector(state => state.cart.items);
 
+
+    /* in my first attempt in this project,
+    i tried to make the cartQuantity at the store then use increment and decrement in the functions that adds / reduce item in cart ... 
+
+    doing it with a state and using useEffect  with the state as a parameter in the [ ] makes it update based on the cart itself so its kinda easier and faster
+    
+    
+    */
     const [cartQuantity, setCartQuantity] = useState(0);
 
     useEffect(() => {
@@ -253,6 +261,8 @@ function ProductList() {
    const handleCartClick = (e) => {
     e.preventDefault();
     setShowCart(true); // Set showCart to true when cart icon is clicked
+
+    /* there is logic below like ternary operator of HTML TAGS */
 };
     const handlePlantsClick = (e) => {
         e.preventDefault();
@@ -309,6 +319,12 @@ function ProductList() {
             </div>
         </div>
             {/* nav bar end */}
+
+
+        {/* showcart is true at first... it is reversed. so it is now false which means the productlist UI will be generated.
+        
+        if cart button is clicked in navbar.. the value becomes opposite and the cart UI will be generated.
+        */}
         {!showCart? (
         <div className="product-grid">
 
