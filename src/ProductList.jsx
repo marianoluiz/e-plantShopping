@@ -9,7 +9,8 @@ function ProductList() {
 
     const cart = useSelector(state => state.cart.items);
 
-    let totalCartQuantity = 0;
+    let totalCartQuantity = useSelector(state => state.cart.totalCartQuantity);
+
 
     const dispatch = useDispatch();
 
@@ -267,8 +268,6 @@ function ProductList() {
 
     const handleAddToCart = (plant) => {
         dispatch(addItem(plant));
-
-        totalCartQuantity++;
     }
 
     return (
@@ -333,6 +332,8 @@ function ProductList() {
                             onClick={() => handleAddToCart(plant)}>
                             {cartItem && cartItem.quantity > 0 ? 'Added to Cart' : 'Add to Cart'}
                             </button>
+
+                            
                         </div>
                         );
                         
@@ -343,7 +344,7 @@ function ProductList() {
 
         </div>
  ) :  (
-    <CartItem onContinueShopping={handleContinueShopping} totalCartQuantity={totalCartQuantity}/>
+    <CartItem onContinueShopping={handleContinueShopping} />
 )}
     </div>
     );
