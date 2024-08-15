@@ -295,8 +295,8 @@ function ProductList() {
                {/* home */}
                <a href={`${baseUrl}`} style={{textDecoration:'none'}}>
                         <div>
-                    <h3 style={{color:'white'}}>Paradise Nursery</h3>
-                    <i style={{color:'white'}}>Where Green Meets Serenity</i>
+                    <h3 style={{color:'white'}}>Green Galores</h3>
+                    <i style={{color:'white'}}>Nurturing Nature's Wonders</i>
                     </div>
                 </a>
                 </div>
