@@ -237,24 +237,14 @@ function ProductList() {
             ]
         }
     ];
-   const styleObj={
-    backgroundColor: '#4CAF50',
-    color: '#fff!important',
-    padding: '15px',
-    display: 'flex',
-    justifyContent: 'space-between',
-    alignIems: 'center',
-    fontSize: '20px',
-   }
    const styleObjUl={
     display: 'flex',
     justifyContent: 'space-between',
     alignItems: 'center',
-    width: '1100px',
    }
    const styleA={
     color: 'white',
-    fontSize: '30px',
+    fontSize: '25px',
     textDecoration: 'none',
     position: 'relative',
    }
@@ -274,11 +264,11 @@ function ProductList() {
     e.preventDefault();
     setShowCart(false);
   };
-
+/* cart qty coount style (tried for fun) */
   const itemCountStyle = {
     position: 'absolute',
     fontWeight: 'bold',
-    fontSize: '28px',
+    fontSize: '22px',
     top: '48%',
     left: '50%',
     transform: 'translate(-50%, -50%)',
@@ -291,10 +281,10 @@ function ProductList() {
     return (
         <div>
             {/* nav bar */}
-             <div className="navbar" style={styleObj}>
+             <div className="navbar">
             <div className="tag">
                <div className="luxury">
-               <img src="https://cdn.pixabay.com/photo/2020/08/05/13/12/eco-5465432_1280.png" alt="" style={{marginRight: '10px'}}/>
+               <img src="https://cdn.pixabay.com/photo/2020/08/05/13/12/eco-5465432_1280.png" alt=""/>
                <a href="/" style={{textDecoration:'none'}}>
                         <div>
                     
@@ -306,7 +296,7 @@ function ProductList() {
                 </div>
               
             </div>
-            <div style={styleObjUl}>
+            <div style={styleObjUl} className='navUl'>
                 <div> <a href="#" onClick={(e)=>  handlePlantsClick(e)} style={styleA}>Plants</a></div>
 
                 {/* this opens modal because u prevent default changing page */}
