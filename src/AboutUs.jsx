@@ -5,7 +5,7 @@ function AboutUs() {
   return (
     <div className="about-us-container">
       
-      <h3 className="about-us-description">" Where <span style={{color:'#4caf50'}}>Green</span> Meets Serenity "</h3>
+      <h3 className="about-us-description">" Discover the Beauty of <span style={{color:'#4caf50'}}>Green</span> "</h3>
       <p className="about-us-content">
         At Paradise Nursery, we are passionate about bringing nature closer to you. Our mission is to provide a wide range of 
         high-quality plants that not only enhance the beauty of your surroundings but also contribute to a healthier and 
