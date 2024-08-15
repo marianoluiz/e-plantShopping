@@ -4,7 +4,6 @@ import './AboutUs.css';
 function AboutUs() {
   return (
     <div className="about-us-container">
-      {/* <h1 className="about-us-heading">About Us</h1> */}
       
       <h3 className="about-us-description">" Where <span style={{color:'#4caf50'}}>Green</span> Meets Serenity "</h3>
       <p className="about-us-content">
@@ -12,7 +11,7 @@ function AboutUs() {
         high-quality plants that not only enhance the beauty of your surroundings but also contribute to a healthier and 
         more sustainable lifestyle.
       </p>
-      {/* <p className="plant_logo_left"><img src="https://p1.hiclipart.com/preview/922/979/640/green-leaf-logo-emoji-seedling-emoticon-sticker-plant-plant-stem-flower-png-clipart-thumbnail.jpg" height='50px' width='50px' alt="" /></p> */}
+
       <p className="about-us-content">
         Our team of experts is dedicated to ensuring that each plant meets our strict standards of quality and care. 
         Whether you're a seasoned gardener or just starting your green journey, we're here to support you every step of 

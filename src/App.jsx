@@ -22,7 +22,7 @@ function App() {
          <div className="landing_content">
          <h1>Welcome To Paradise Nursery</h1>
           <div className="divider"></div>
-          <p style={{fontSize: '22px'}}>Where Green Meets Serenity</p>
+          <p>Where Green Meets Serenity</p>
          
           <button className="get-started-button" onClick={handleGetStartedClick}>
             Get Started

@@ -40,7 +40,6 @@
   text-align: center;
   width: 500px;
   height: 400px;
-
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -51,7 +50,6 @@
 .content p,
 .content h1, .content h3 {
   color: white;
-
 }
 
 .content h1 {
@@ -59,7 +57,9 @@
   padding: 0 50px;
   margin-bottom: 10px;
 }
-
+.landing_content p {
+  font-size: 22px;
+}
 
 .divider {
   width: 50px;
@@ -109,7 +109,8 @@
   top: 0;
 }
 /* LandingPage.css */
-@media screen and (max-width: 768px) {
+
+@media screen and (max-width: 1200px) {
   .content {
     flex-direction: column;
     align-items: center;
@@ -121,18 +122,54 @@
     text-align: center;
   }
 
-  .aboutus_container {
+/*   .aboutus_container {
     
-  }
+  } */
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
   .landing_content {
-    margin-top: 50px; /* Adjust as needed */
+    margin-top: 0px; /* Adjust as needed */
     width: 90%; /* Adjust as needed */
+    text-align: center;
+    height: 40%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
   }
 
   .aboutus_container {
     width: 90%; /* Adjust as needed */
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+  .content h1 {
+    font-size: 30px;
+    padding: 0 0;
+    margin-bottom: 0;
+  }
+  .landing_content p {
+    font-size: 18px;
+  }
+  .divider {
+    margin: 0 0;
+  }
+  .get-started-button {
+    padding: 10px 18px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4caf50;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
   }
 }

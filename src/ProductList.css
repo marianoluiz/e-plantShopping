@@ -255,8 +255,7 @@ body {
       flex: 1 1 80%;
       max-width: 80%;
       /* 
-      flex: 1 1 100%;
-
+      flex
         1 (flex-grow): The item will grow to fill available space.
         1 (flex-shrink): The item will shrink if needed.
         100% (flex-basis): The initial size of the item is set to 100% of the container's width, ensuring that each card occupies the full width of the container.
