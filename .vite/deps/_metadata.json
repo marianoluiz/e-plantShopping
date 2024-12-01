@@ -1,0 +1,40 @@
+{
+  "hash": "62ad9ccf",
+  "configHash": "fceb0ee7",
+  "lockfileHash": "dd7d1f08",
+  "browserHash": "86068af7",
+  "optimized": {
+    "react": {
+      "src": "../../node_modules/react/index.js",
+      "file": "react.js",
+      "fileHash": "c54970e3",
+      "needsInterop": true
+    },
+    "react-dom/client": {
+      "src": "../../node_modules/react-dom/client.js",
+      "file": "react-dom_client.js",
+      "fileHash": "1d19e9dc",
+      "needsInterop": true
+    },
+    "react-redux": {
+      "src": "../../node_modules/react-redux/dist/react-redux.mjs",
+      "file": "react-redux.js",
+      "fileHash": "a73f6ee6",
+      "needsInterop": false
+    },
+    "@reduxjs/toolkit": {
+      "src": "../../node_modules/@reduxjs/toolkit/dist/redux-toolkit.modern.mjs",
+      "file": "@reduxjs_toolkit.js",
+      "fileHash": "daca455c",
+      "needsInterop": false
+    }
+  },
+  "chunks": {
+    "chunk-4EE4R5TB": {
+      "file": "chunk-4EE4R5TB.js"
+    },
+    "chunk-LNEMQRCO": {
+      "file": "chunk-LNEMQRCO.js"
+    }
+  }
+}
